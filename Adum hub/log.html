@@ -1,0 +1,199 @@
+<html>
+    <head>
+
+        <title>User Details</title>
+        <link rel="stylesheet" href="all.css">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   		 <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">	
+		
+
+		
+    </head>
+
+	<body>
+		<div style = "position:relative; left:80px; top:2px;">
+		</div>
+
+			<div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+                </div>
+      
+				<div class="tab-content">
+				<div id="signup">   
+				<h1> Sign Up </h1>
+          
+				<form action="/" method="post">
+          
+				<div class="top-row">
+						<div class="field-wrap">
+						<label>
+							User Name<span class="req">	</span>
+						</label>
+						<div class="col-lg-4 col-md-6"></div>
+							<input type="text" required autocomplete="off"  />
+						</div>
+        
+				</div>
+
+				<div class="field-wrap">
+					<label>
+						Email Address<span class="req"></span>
+					</label>
+					<div class="col-lg-4 col-md-6"></div>
+					<input type="email"required autocomplete="off"/>
+				</div>
+          
+				<div class="field-wrap">
+					<label>
+						Set A Password<span class="req"></span>
+					</label>
+					<div class="col-lg-4 col-md-6"></div>
+					<input type="password"required autocomplete="off"/>
+				</div>
+				
+					<button type="submit" class="button button-block"/>Get Started</button>
+					
+				</form>
+
+				</div>
+        
+			<div id="login">   
+				<h1>Welcome Back!</h1>
+          
+				<form action="/" method="post">
+          
+				<div class="field-wrap">
+						<label>
+							Email Address<span class="req"></span>
+						</label>
+						<div class="col-lg-4 col-md-6"></div>
+					<input type="email"required autocomplete="off"/>
+				</div>
+          
+				<div class="field-wrap">
+						<label>
+							Password<span class="req"></span>
+						</label>
+						<div class="col-lg-4 col-md-6"></div>
+					<input type="password"required autocomplete="off"/>
+				</div>
+          
+					<p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+					<button class="button button-block"/>Log In</button>
+          
+				</form>
+
+				</div>
+        
+			</div>
+      
+		</div>
+
+
+            <script>
+
+                    var x = document.getElementById ("login");
+                    var y = document.getElementById ("register");
+                    var z = document.getElementById ("button");
+
+
+                    function register(){
+                        x.style.left = "-450px"
+                        y.style.left = "50px"
+                        z.style.left = "110px"
+                    }
+                    function login(){
+                        x.style.left = "50px"
+                        y.style.left = "450px"
+                        z.style.left = "0"
+                    }
+
+
+            </script>
+			
+			
+	<footer class="footer-sec mt-5 mx-auto">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
+					<h4>About Us</h4>
+					<p>Since 5 years. Gives you qality items.</p>
+					<div class="footer-logo">
+						<h3 class="text-white">Adum hub</h3>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
+					<h4>Contact Us</h4>
+					<div class="footer-address">
+						<p>C 31, Adum hub, New Bus Stand, Balangoda</p>
+						<span>Phone: 0707544475</span>
+						<span>email: pathumdulaj@gmail.com</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
+					<h4> Go</h4>
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="about us.html">About us </a></li>
+						<li><a href="categories.html">Categories</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+
+				</div>
+			<div class="col-lg-3 col-sm-6 col-md-6 mb-4 mb-xl-0 footer-widget">
+					<h4> Adum hub</h4>
+					
+					<div class="form-wrap">
+						<form>
+							<div class="input-group">
+								<input type="email"class="form-control" name="Email"placeholder="Email Address">
+								<div class="input-group-append">
+									<button class="btn click-btn" type="submit">
+										<i class="fab fa-telegram-plane"></i>
+									</button>
+								</div>
+
+							</div>
+						</form>
+					</div>
+			</div>
+			</div>
+        
+				<div class="footer-bottom row align-items-center text-center  text-lg-left no-gutters">
+					<p class="footer-text m-0 col-lg-8 col-md-12">
+						Copyright&copy;<script>document.write(new Date().getFullYear());</script>
+						All rights Reserved  
+							<i class="fas fa-heart" aria-hidden="true"></i>
+						by Adum hub
+					</p>
+					<div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+					</div>
+        
+        
+				</div>
+
+		</div>
+		
+	</footer>
+
+
+	
+	
+	<script src="all.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+
+    </body>
+
+
+</html>
